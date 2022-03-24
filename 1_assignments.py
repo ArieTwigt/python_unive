@@ -26,12 +26,14 @@ namen_lijst = ['John', 'Jim', 'Ann', 'Mary', 'Eric']
 
 
 ### Oplossingen
-#%% 1
+## 1
+#%% 
 voornaam = "Arie"
 achternaam = "Twigt"
 volledige_naam = f"{voornaam} {achternaam} Jr."
 print(volledige_naam)
 
+## 2
 #%% a
 voornaam_short = voornaam.replace("rie", ".")
 volledige_naam_short = f"{voornaam_short} {achternaam} Jr."
@@ -41,6 +43,8 @@ print(volledige_naam_short)
 #%% b
 volledige_naam_short = f"{voornaam[0]}. {achternaam} Jr."
 print(volledige_naam_short)
+
+## 3.
 
 # %%
 namen_lijst = ['John', 'Jim', 'Ann', 'Mary', 'Eric']
