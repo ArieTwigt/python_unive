@@ -1,8 +1,4 @@
 #%% Enkelvoudige string
-from operator import le
-from unicodedata import name
-
-
 naam = 'Arie'
 achternaam = 'Twigt'
 #%%
