@@ -1,4 +1,7 @@
 # Voorbeeldcode 
+from unicodedata import name
+
+
 https://github.com/ArieTwigt/python_unive
 
 
@@ -51,4 +54,6 @@ namen_lijst = ['John', 'Jim', 'Ann', 'Mary', 'Eric']
 namen_lijst[1] = 'Arie'
 namen_lijst.append('Dirk')
 print(namen_lijst)
+# %%
+['Unkown' if naam != 'Eric' else naam for naam in namen_lijst]
 # %%
