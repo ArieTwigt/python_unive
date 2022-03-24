@@ -23,3 +23,28 @@ namen_lijst = ['John', 'Jim', 'Ann', 'Mary', 'Eric']
 
 
 # voeg de naam 'Dirk' toe aan de lijst
+
+
+### Oplossingen
+#%% 1
+voornaam = "Arie"
+achternaam = "Twigt"
+volledige_naam = f"{voornaam} {achternaam} Jr."
+print(volledige_naam)
+
+#%% a
+voornaam_short = voornaam.replace("rie", ".")
+volledige_naam_short = f"{voornaam_short} {achternaam} Jr."
+print(volledige_naam_short)
+
+
+#%% b
+volledige_naam_short = f"{voornaam[0]}. {achternaam} Jr."
+print(volledige_naam_short)
+
+# %%
+namen_lijst = ['John', 'Jim', 'Ann', 'Mary', 'Eric']
+namen_lijst[1] = 'Arie'
+namen_lijst.append('Dirk')
+print(namen_lijst)
+# %%
