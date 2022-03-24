@@ -113,3 +113,8 @@ namen_lijst_2 = ['Gerrit', 'Kees']
 #%%
 namen_lijst_1 + namen_lijst_2
 # %%
+naam = "Arie"
+
+# %% substring
+naam[0:2]
+# %%
