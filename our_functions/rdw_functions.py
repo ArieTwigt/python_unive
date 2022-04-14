@@ -16,7 +16,6 @@ def show_different_brands():
 def get_random_cars(num_results=1000):
     endpoint = f"https://opendata.rdw.nl/resource/m9d7-ebf2.json?$limit={num_results}"
     response = requests.get(endpoint)
-    print(response.status_code)
     cars_list = response.json()
     return cars_list
 
@@ -29,7 +28,6 @@ def get_car_by_brand(brand, num_results=1000):
     brand_upper = brand.upper()
     endpoint = f"https://opendata.rdw.nl/resource/m9d7-ebf2.json?merk={brand_upper}&$limit={num_results}" 
     response = requests.get(endpoint)
-    print(response.status_code)
     cars_list = response.json()
     return cars_list
 
@@ -55,5 +53,3 @@ def export_cars_to_csv(car_list, brand="RANDOM", data_folder= "data"):
     df_cars.to_csv(file_name,
                 index=False,
                 sep=";")
-
-    print(f"Exported into {export_folder}")

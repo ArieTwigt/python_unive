@@ -1,0 +1,3 @@
+{"db_loc": "https://my_db.loc", 
+    "brands": ["SAAB", "SUBARU", "SPYKER", "IVECO", "MAN"], 
+    "limit": 5000}
