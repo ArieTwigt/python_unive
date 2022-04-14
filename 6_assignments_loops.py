@@ -4,7 +4,7 @@
 # 1.
 namen_lijst = ['Jim', 'John', 'Marc', 'Danny', 'Peter']
 
-vowels = ['a', 'e', 'i', 'o', 'u']
+vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 namen_lijst_filtered = []
 
@@ -25,10 +25,11 @@ print(namen_lijst_filtered)
 #%%
 # 2.
 from datetime import datetime, timedelta
-from threading import local
 
+# create variable with current date
 date_today = datetime.today()
 
+# define data range
 day_range = range(1, 11)
 
 
@@ -45,9 +46,9 @@ locale.setlocale(locale.LC_ALL, 'nl_NL')
 
 for day in day_range:
     new_date = date_today + timedelta(days=day)
-    print(new_date.strftime("%A"))
+    print(new_date.strftime(f"Over {day} dagen is het :%A in het jaar %Y"))
 
-# %%
+# %% c.
 i = 1
 max_days = 10
 
